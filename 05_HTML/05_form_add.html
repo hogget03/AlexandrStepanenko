@@ -7,6 +7,83 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <h1 align="center">Заполните анкету</h1>
+ <form action="http://fe.it-academy.by/TestForm.php"></form>   
+    <fieldset>
+        <legend>Личные данные</legend>
+        <input type="text" name="surname" required placeholder="Фамилия" pattern="[А-Яа-я-Ёё]" maxlength="25" autofocus> <br>
+        <input type="text" name="name" required placeholder="Имя" pattern="[А-Яа-я-Ёё]" maxlength="20"> <br>
+        <input type="text" name="fname" required placeholder="Отчество" pattern="[А-Яа-я-Ёё]" maxlength="24"> 
+        <fieldset>
+            <legend>Паспортые данные</legend>
+            <input type="text" name="series" required placeholder="AA" maxlength="2" minlength="2" pattern="[A-Z]{2,}">
+            <input type="text" name="number" required placeholder="1234567" maxlength="7" minlength="7" pattern="[1-9]">
+        </fieldset>
+        <fieldset>
+            <legend>Дата рождения</legend>
+            <input type="text" name="Year_of_birth" placeholder="2000" pattern="[1-9]{4}" maxlength="4"> <br>
+            <select name="month">
+                <option value="Январь">Январь</option>
+                <option value="Февраль">Февраль</option>
+                <option value="Март">Март</option>
+                <option value="Апрель">Апрель</option>
+                <option value="Май">Май</option>
+                <option value="Июнь">Июнь</option>
+                <option value="Июль">Июль</option>
+                <option value="Август">Август</option>
+                <option value="Сентябрь">Сентябрь</option>
+                <option value="Октябрь">Октябрь</option>
+                <option value="Ноябрь">Ноябрь</option>
+                <option value="Декабрь">Декабрь</option>
+            </select> <br>
+            <input type="number" min="1" max="31" step="1">
+        </fieldset> <br>
+        <select name="nationality" required>
+            <option value="РБ">РБ</option>
+            <option value="РФ">РФ</option>
+            <option value="Казахстан">Казахстан</option>
+        </select> <br>
+        Адрес: <br>
+        <textarea name="adress" cols="25" rows="2"></textarea>
+    </fieldset> 
+    <fieldset>
+        <legend>Интересы</legend>
+        <Fieldset>
+            <legend>Хобби</legend>
+            <label>
+                <input type="checkbox" name="array"> Рыбалка <br>
+            </label>
+            <label>
+                <input type="checkbox" name="array"> Астрономия <br>
+            </label>
+            <label>
+                <input type="checkbox" name="array"> Дайвинг <br>
+            </label>
+           <label>  
+                <input type="checkbox" name="array"> Марки <br>
+            </label>
+        </Fieldset>
+        <fieldset>
+            <legend>Домашние животные</legend>
+            <select name="pets" multiple>
+               <optgroup label="Попугаи">
+                    <option value=""></option>
+                    <option value=""></option>
+                    <option value=""></option>
+               </optgroup>
+               <optgroup label="Рыба">
+                    <option value=""></option>
+                    <option value=""></option>
+                    <option value=""></option>
+               </optgroup>
+               <optgroup label="Птицы">
+                    <option value=""></option>
+                    <option value=""></option>
+                    <option value=""></option>
+               </optgroup>
+            </select>
+        </fieldset>
+    </fieldset>
+</form> 
 </body>
 </html>
