@@ -8,10 +8,10 @@
 </head>
 <body>
     <h1 align="center">Заполните анкету</h1>
- <form action="http://fe.it-academy.by/TestForm.php"></form>   
+ <form action="http://fe.it-academy.by/TestForm.php"> 
     <fieldset>
         <legend>Личные данные</legend>
-        <input type="text" name="surname" required placeholder="Фамилия" pattern="[А-Яа-я-Ёё]" maxlength="25" autofocus> <br>
+        <input type="text" name="surname" required placeholder="Фамилия"  maxlength="25" autofocus pattern="[А-Яа-яЁё]"> <br>
         <input type="text" name="name" required placeholder="Имя" pattern="[А-Яа-я-Ёё]" maxlength="20"> <br>
         <input type="text" name="fname" required placeholder="Отчество" pattern="[А-Яа-я-Ёё]" maxlength="24"> 
         <fieldset>
@@ -65,24 +65,47 @@
         </Fieldset>
         <fieldset>
             <legend>Домашние животные</legend>
-            <select name="pets" multiple>
+            <select name="pets" multiple size="12">
                <optgroup label="Попугаи">
-                    <option value=""></option>
-                    <option value=""></option>
-                    <option value=""></option>
+                    <option value="Волнистый">Волнистый</option>
+                    <option value="Ара">Ара</option>
+                    <option value="Неразлучник">Неразлучник</option>
                </optgroup>
                <optgroup label="Рыба">
-                    <option value=""></option>
-                    <option value=""></option>
-                    <option value=""></option>
+                    <option value="Караси">Караси</option>
+                    <option value="Окуни">Окуни</option>
+                    <option value="Осётр">Осётр</option>
                </optgroup>
                <optgroup label="Птицы">
-                    <option value=""></option>
-                    <option value=""></option>
-                    <option value=""></option>
+                    <option value="Стая ворон">Стая ворон</option>
+                    <option value="Аист">Аист</option>
+                    <option value="Арехеоптерикс">Арехеоптерикс</option>
                </optgroup>
             </select>
         </fieldset>
+    </fieldset>
+    <fieldset>
+        <legend>Данные для входа и восстановления пароля</legend>
+        <input type="text" name="logInn" required placeholder="Логин" size="20" pattern="[A-Za-z]{5,}"> <br>
+        <input type="password" name="password" required placeholder="Пароль" autocomplete="off" size="20" pattern="[A-Za-z]{10,}">
+    </fieldset> 
+    <fieldset>
+        <legend>Координаты:</legend>
+        <input type="email" name="e-mail" placeholder="введите адрес почты" pattern=""> <br>
+        <input type="url" name="url" placeholder="введите адрес сайта" pattern="">
+    </fieldset>
+    <FIeldset>
+        <legend>Цифры</legend>
+        <input type="number" name="number" min="-2.5" max="2.5" step="0.1"><br>
+        <input type="range" name="range" min="1" max="10"><br>
+    </FIeldset>
+    <fieldset>
+        <legend>Кнопки управления</legend>
+        <input type="submit" name="send" value="Отправить">
+        <input type="reset" name="reset" value="Сбросить"><br>
+        <button type="button">
+            <img src="button.jpg">
+        </button>
     </fieldset>
 </form> 
 </body>
