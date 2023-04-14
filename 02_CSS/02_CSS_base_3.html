@@ -1,12 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+<style>
+    .meny {
+        background-color: lightgray;
+        width: 15em;
+        float: left;
+    }
+
+    .art1 {
+        background-color: gray;
+        margin-bottom: .2em;
+        font-size: large;
+    }
+
+    .art2 {
+        background-color: gray;
+        margin-bottom: .2em;
+        font-size: large;
+    }
+
+    .fotter {
+        background-color: lightslategray;
+        float: left;
+    }
+
+    .wrap {
+        overflow: hidden;
+        margin-top: 0;
+    }
+
+    .clear {
+        clear: both
+    }
+
+    .wrapp {
+        background-color: bisque;
+
+    }
+
+    .h {
+        margin: .2em;
+    }
+
+    .mail {
+        text-align: right;
+    }
+</style>
+
 <body>
-    
+    <div class="wrapp">
+
+        <div class="meny">
+            <b>Блок навигации</b>
+            <ul>
+                <li>Ширина 15em</li>
+                <li>Должен присутсвовать цвет фона</li>
+                <li> Расоплогаеться слева</li>
+                <li>Блок навигации наполните контеном достаточным, чтобы по высоте захватыввать вторую стаью, как
+                    показано в
+                    данном приемре</li>
+            </ul>
+        </div>
+        <div class="wrap">
+
+            <div class="clear"></div>
+            <div class="art1">
+                <h2 class="h">Статья 1</h2>
+                <p class="h">Размер блока:</p>
+                <p class="h">Занимает всю доступную ширину</p>
+                <p class="h">Должен присутсвовать цвет фона</p>
+                <p class="h">Во всех "статьях" сделайте отступ снизу от соседей равным .2em, при помощи свойства
+                    margin-bottom</p>
+            </div>
+            <div class="art2">
+                <h2 class="h">Статья 2</h2>
+                <p class="h">Размер блока:</p>
+                <p class="h">Занимает всю доступную ширину</p>
+                <p class="h">Во всех "статьях" сделайте отступ снизу от соседей равным .2em, при помощи свойства
+                    margin-bottom.
+                    Картинка вставлена при помощи тега, плавание организованно по правому краю внутри данной статьи для
+                    этой
+                    картинки. </p>
+                <div class="mail"><img src="ET2wp8GWkAA7p-8.png" width="100px" height="100px">
+                </div>
+            </div>
+        </div>
+        <div class="fotter">Нижний блок, подвал. Занимает всю доступную ширину. Высота определяется помещенным внутрь
+            контентом.</div>
+    </div>
+
 </body>
+
 </html>
